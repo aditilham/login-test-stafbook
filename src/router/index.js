@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 import LoginPage from "../pages/LoginPage/LoginPage.vue"
-import IbmStock from "../pages/Home/HomePage.vue"
+import StockData from "../pages/Home/HomePage.vue"
 
 const routes = [
   {
@@ -11,15 +11,15 @@ const routes = [
     meta: { requiresAuth: false }
   },
   {
-    path: "/ibm-stock",
-    name: "IbmStock",
-    component: IbmStock,
+    path: "/stock-data",
+    name: "StockData",
+    component: StockData,
     meta: { requiresAuth: true, menu: "stock" }
   },
   // Error Page
   {
     path: '/:catchAll(.*)',
-    redirect: '/ibm-stock'
+    redirect: '/stock-data'
   }
 ];
 
