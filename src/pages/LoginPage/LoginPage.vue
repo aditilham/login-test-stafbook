@@ -45,7 +45,7 @@ export default {
       googleTokenLogin().then((response) => {
         this.$store.dispatch('setToken', response)
         .then(() => {
-          this.$router.push({ name: "IbmStock" })
+          this.$router.push({ name: "StockData" })
         })
       })
       .catch(() => {
