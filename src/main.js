@@ -2,7 +2,9 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import moment from "moment";
 import vue3GoogleLogin from 'vue3-google-login'
+import './index.css'
 
 router.beforeEach((to, from, next) => {
 
@@ -31,6 +33,7 @@ const app = createApp(App)
 let gauthClientid = '22281155287-2q2pmubr564qv48em0mad7448mg764m6.apps.googleusercontent.com'
 app.use(store)
 app.use(router)
+app.use(moment)
 app.use(vue3GoogleLogin, {
   clientId: gauthClientid
 })

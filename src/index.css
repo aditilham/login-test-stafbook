@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@responsive {
+  .phone-login {
+      background-image: url("./assets/img/bg-stock.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+  .login {
+      background-image: url("./assets/img/bg-stock.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "symbolsList": [
+    {
+      "id": 1,
+      "symbol": "BTCUSD"
+    },
+    {
+      "id": 2,
+      "symbol": "ETHUSD"
+    }
+  ]
+}
